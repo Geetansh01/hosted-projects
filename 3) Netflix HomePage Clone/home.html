@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="assets/images/netflix_logo.svg" alt="netflix_logo">
+            <ul>
+                <li>
+                    <button class="language_selector">
+                        <img src="assets/images/lang_icon.svg" alt="">
+                        <span>English</span>
+                        <img src="assets/images/dropdown_icon.svg" alt="">
+                    </button>
+                </li>
+                <li><button class="sign_in">
+                        Sign In
+                    </button></li>
+            </ul>
+        </nav>
+        <div class="membership-prompt">
+            <h1>
+                Unlimited movies, TV shows, and more
+            </h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <p>Ready to watch? Enter your email to create or restart your membership.
+            </p>
+            <form class="signup-form" method="post">
+                <div>
+                    <input type="text" name="email" id="email" placeholder="Email Address">
+                    <button id="get-started">
+                        <label for="email">Get Started <img height="17px"
+                                src="assets/images/icon-with-getstarted.svg"></label>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <div class="enjoy-on-tv-section">
+            <div class="text">
+                <h1>
+                    Enjoy on your TV
+                </h1>
+                <p>
+                    Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+                </p>
+            </div>
+            <div class="tv">
+                <img height="491px" src="assets/images/tv.png" alt="tv">
+                <video muted autoplay loop src="assets/videos/video-tv.mp4"></video>
+            </div>
+        </div>
+
+        <div class="line">
+            <!-- Separation line -->
+        </div>
+
+        <div class="watch-anywhere-section">
+            <div class="device-pile">
+                <img height="491px" src="assets/images/device-pile.png" alt="tv">
+                <video muted autoplay loop src="assets/videos/video-devices.m4v"></video>
+            </div>
+            <div class="text">
+                <h1>
+                    Watch everywhere
+                </h1>
+                <p>
+                    Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+                </p>
+            </div>
+        </div>
+
+        <div class="line">
+            <!-- Separation line -->
+        </div>
+
+        <div class="faq">
+            <h1>Frequently Asked Questions</h1>
+            <button class="question">
+                <p>What is Netflix?</p>
+                <img src="assets/images/faqPlus.svg" alt="more">
+            </button>
+            <button class="question">
+                <p>How much does Netflix cost?</p>
+                <img src="assets/images/faqPlus.svg" alt="more">
+            </button>
+            <button class="question">
+                <p>Where can I watch?</p>
+                <img src="assets/images/faqPlus.svg" alt="more">
+            </button>
+            <button class="question">
+                <p>How do I cancel?</p>
+                <img src="assets/images/faqPlus.svg" alt="more">
+            </button>
+        </div>
+
+        <div class="membership-prompt">
+            <h1></h1>
+            <p></p>
+            <!--Keeping these empty <p> and <h> tags bcz nth child CSS is used and "membership-prompt" class is also used at the top of the page  -->
+            <p>Ready to watch? Enter your email to create or restart your membership.
+            </p>
+            <form class="signup-form" method="post">
+                <div>
+                    <input type="text" name="email" id="email" placeholder="Email Address">
+                    <button id="get-started">
+                        <label for="email">Get Started <img height="17px"
+                                src="assets/images/icon-with-getstarted.svg"></label>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="line">
+            <!-- Separation line -->
+        </div>
+    </main>
+
+    <footer>
+        <p>Questions? Call 1-844-505-2993</p>
+        <div class="footer-content">
+            <p>FAQ</p>
+            <p>Account</p>
+            <p>Investor Relations
+            </p>
+            <p>Netflix Shop</p>
+            <p>Buy Gift Cards</p>
+            <p>Terms of Use</p>
+            <p>Cookie Preferences
+            </p>
+            <p>Contact Us</p>
+            <p>Legal Notices</p>
+            <p>Help Center</p>
+            <p>
+                Media Center
+            </p>
+            <p>Jobs
+            </p>
+            <p>
+                Redeem Gift Cards
+            </p>
+            <p>
+                Ways to Watch</p>
+            <p>
+                Privacy
+            </p>
+            <p>
+                Corporate Information
+            </p>
+            <p>Do Not Sell or Share My Personal Information</p>
+            <p>
+                Speed Test</p>
+            <p>
+                Only on Netflix</p>
+            <p>Ad Choices
+            </p>
+            <button class="language_selector">
+                <img src="assets/images/lang_icon.svg" alt="">
+                <span>English</span>
+                <img src="assets/images/dropdown_icon.svg" alt="">
+            </button>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<!-- 
+    Unable to do while making nav:
+    1)Make background dark
+    2)change svg colors
+    3)blur background of language selector
+    
+    Unable to do while making FAQ:
+    1)Make the hover bg-change effect smooth AF. I guess the og Netflix site is using JS 🤔
+-->
+
+<!--
+    Mistakes realised after watching soln video (Tut 53):
+    1)could have used "&gt;" instead of ">" in "get started" button
+    2)could have embedded simple svg's like the "+" icon in FAQs directly in the HTML rather than saving it separately in "assets/images".
+      But when the same svg is being used in multiple documents (pages) then it's better to save it at one place than to embed it everywhere separately.
+    3)Forgot to use "flex-wrap" altogether while making responsive design 😂
+    4)After making the "enjoy-on-tv-section" section, there really was no need of even manually coping it to make the "watch-anywhere-section" section, i could have used the same class name, that would have saved a ton of copy pasting.
+ -->
+
+<!--Cloned with this as reference : https://web.archive.org/web/20231129012517/https://www.netflix.com/ -->

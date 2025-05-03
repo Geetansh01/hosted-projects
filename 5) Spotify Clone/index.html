@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="sidebar">
+            <nav class="navbar2 black-card">
+                <ul>
+                    <li>
+                        <img src="./assets/images/logo.svg" alt="spotify">
+                        <img id="closemenu-icon" src="./assets/images/close-menu.svg" alt="close">
+                    </li>
+                    <li><img src="./assets/images/home.svg" alt="home"> Home</li>
+                    <li><img src="./assets/images/search.svg" alt="search"> Search</li>
+                </ul>
+            </nav>
+
+            <div class="library black-card">
+                <span> <img height="24px" src="./assets/images/lib.svg" alt="library"> Your Library</span>
+
+                <div class="songs-area">
+
+                </div>
+                <!-- <div class="song black-card">
+                    <div class="first">
+                        <img src="./assets/images/music-icon.svg" alt="play">
+                        <div class="song-info">
+                            <p id="trackName">Aam Jahe Munde</p>
+                            <p id="artistName">Parmish Verma</p>
+                        </div>
+                    </div>
+                    <img src="./assets/images/playBtn.svg" alt="play">
+                </div> -->
+
+                <div class="library-actions">
+                    <div class="libcard">
+                        <div>
+                            <p>Create your first playlist</p>
+                            <p>It's easy, we'll help you</p>
+                        </div>
+                        <button>Create playlist</button>
+                    </div>
+                    <div class="libcard">
+                        <div>
+                            <p>Create your first podcast</p>
+                            <p>It's easy, we'll help you</p>
+                        </div>
+                        <button>Create podcast</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <footer class="black-card">
+                <div class="links">
+                    <span>Legal</span>
+                    <span>Cookies</span>
+                    <span>Privacay Policy</span>
+                    <span>Legal</span>
+                    <span>Cookies</span>
+                    <span>Privacay Policy</span>
+                    <span>Legal</span>
+                    <span>Cookies</span>
+                    <span>Privacay Policy</span>
+                </div>
+                <div>
+                    <button>
+                        <img height="16px" src="./assets/images/world.svg" alt="language">
+                        <span>English</span>
+                    </button>
+                </div>
+        </div>
+
+        <div class="right">
+            <nav class="black-card">
+                <div>
+                    <img id="openmenu-icon" src="./assets/images/menuicon.svg" alt="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 6L9 12L15 18" stroke="white" stroke-width="1.5" stroke-miterlimit="16" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9.00005 6L15 12L9 18" stroke="white" stroke-width="1.5" stroke-miterlimit="16" />
+                    </svg>
+
+                </div>
+                <ul>
+                    <li><button>Sign Up</button></li>
+                    <li><button>Log In</button></li>
+                </ul>
+            </nav>
+
+            <div class="hero">
+
+                <div class="spotify-playlists">
+                    <!-- Adding song cards via JS -->
+                </div>
+            </div>
+
+            <div class="playbar">
+                <div class="controls">
+                    <div class="song-name">
+                    </div>
+                    <ul>
+                        <li><img id="prevBtn" src="./assets/images/previousbtnplaybar.svg" alt="previous"></li>
+                        <li><img src="./assets/images/playbtnplaybar.svg" alt="play"></li>
+                        <li><img id="nxtBtn" src="./assets/images/nextbtnplaybar.svg" alt="next"></li>
+                    </ul>
+                    <div class="song-duration">
+                        00:00 / 00:00
+                    </div>
+                    <div class="volume">
+                        <img src="./assets/images/volumebtn.svg" alt="volume">
+                        <input type="range" id="volume" name="volume" />
+                    </div>
+                </div>
+                
+                <div class="seekbar-wrapper">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

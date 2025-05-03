@@ -1,0 +1,17 @@
+What i learnt after watching soln vdo:
+
+1)Was unable to change svg color using CSS
+>As the SVGs are by default black, use "filter: invert(1);" 
+
+2)Was unable to implement responsive height for ".library-actions" & ".sidebar" as a whole
+>
+
+3)A cool trick to capture "mouseenter:mouseleave" type events:
+> setTimeout(() => {debugger;}, 5000)
+
+4)Difference between currentTarget and target property in JavaScript events
+"target" = element that triggered event.
+"currentTarget" = element that has the event listener.
+
+
+

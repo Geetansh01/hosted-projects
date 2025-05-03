@@ -1,0 +1,17 @@
+:root {
+    --pri-bg-color: rgb(0, 0, 0);
+    --debug-bg-color: rgb(99, 84, 84);
+    --pri-color: #121212;
+    --sec-color: #242424;
+    --font-color1: #a7a7a7;
+    --font-color2: white;
+    --border-rad: 8px;
+}
+
+/* round black card */
+.black-card{
+    padding: 20px;
+    background-color: var(--pri-color);
+    border-radius: var(--border-rad);
+    color: var(--font-color2);
+}

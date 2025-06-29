@@ -78,8 +78,7 @@ var minDistance2 = function (str1, str2) {
 /********** ANIMATION LOGIC *******************/
 
 async function sleep(millisecond) {
-    // return new Promise(resolve => setTimeout(resolve, millisecond));
-    // return new Promise(resolve => setTimeout(resolve, millisecond));
+    return new Promise(resolve => setTimeout(resolve, millisecond));
 }
 
 // Animate filling the remaining DP Matrix (DP Table)

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levenshtein Distance</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="input-area ">
+            <input type="text" class="input-strings" placeholder="car"></input>
+            <input type="text" class="input-strings" placeholder="bat"></input>
+        </div>
+        <div class="compute-button-container">
+            <span class="compute-button">Compute Levenshtein Distance</span>
+            <div class="dp-animation-container">
+                <div class="row1"></div>
+                <div class="row2">
+                    <div class="str2-container"></div>
+                    <div class="dp-grid"></div>
+                    <div class="right-border"></div>
+                </div>
+                <div class="bottom-border"></div>
+            </div>
+            <h1 id="output">Levenshtein Distance: </h1>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: large;
+}
+
+.dev {
+    border: 1px solid red;
+}
+
+:root {
+    --main-color: black;
+    --dev-color: grey;
+    --display-unit: 50px;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+.main {
+    padding: 100px;
+}
+
+.input-area {
+    width: 85vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 45px;
+}
+
+.input-strings {
+    all: unset;
+    border: 1px solid white;
+    border-radius: 40px;
+    width: 40%;
+    height: 38px;
+    padding: 14px;
+}
+
+.compute-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.compute-button {
+    background-color: #ff8258;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 32px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    height: 50px;
+    width: 375px;
+}
+
+.dp-animation-container {
+    position: relative;
+}
+
+.row1 {
+    padding-left: var(--display-unit);
+    display: flex;
+    opacity: 0%;
+    transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1) 1s;
+}
+
+.row2 {
+    position: relative;
+    display: flex;
+    opacity: 0%;
+    transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1) 1s;
+}
+
+.dp-grid {
+    display: grid;
+}
+
+.right-border {
+    width: 1px;
+    position: absolute;
+    right: 0px;
+    bottom: calc(-1 * var(--display-unit));
+    background-color: white;
+    transition: height 1s cubic-bezier(0.4, 0, 0.2, 1) 1s;
+}
+
+.bottom-border {
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    transition: width 1s cubic-bezier(0.4, 0, 0.2, 1) 1s;
+}
+
+h1{
+    font-size: larger;
+}
